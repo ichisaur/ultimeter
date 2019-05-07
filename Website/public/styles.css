@@ -1,0 +1,373 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+    grid-area: header;
+    background-color: #eca400;
+    padding: 8px;
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+
+}
+
+.header a {
+    text-decoration: none;
+    color: #2b303a;
+}
+
+/* The grid container */
+.home-container {
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header' 
+        'navbar navbar navbar navbar navbar navbar'
+        'tag tag tag tag tag tag'
+        'left left left right right right' 
+        'footer footer footer footer footer footer';
+
+} 
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header' 
+        'navbar navbar navbar navbar navbar navbar'
+        'left left middle middle right right' 
+        'footer footer footer footer footer footer';
+
+} 
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    background-color: #2b303a;
+    color: white;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+
+
+.navbar li {
+    float: left;
+}
+
+.navbar li.last {
+    float:right;
+}
+
+.navbar li a, .dropdown-button{
+    color: #ffffff;
+
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    
+    padding: 14px 20px;
+    font-weight: bold;
+
+
+    
+}
+
+.navbar li.active {
+    background: #eca400;
+
+}
+.navbar li.active a{
+    color: #2b303a;
+}
+
+
+.navbar li:hover:not(.active) {
+    background-color: #4F6D7A;
+    transition-duration:0.5s;
+    cursor: pointer;
+}
+
+.navbar li.dropdown {
+    display: inline-block;
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    float: none;
+}
+
+.navbar .dropdown-content a {
+    color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  float: none;
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: #4F6D7A;
+    transition-duration:0.5s;
+    cursor: pointer;
+}
+
+  
+.navbar li.dropdown:hover .dropdown-content{
+    display:block;
+    background-color:#2b303a;
+}
+
+.mobile-navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:none;
+    background-color: #2b303a;
+    color: white;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+
+
+.mobile-navbar li {
+    float: left;
+}
+
+.mobile-navbar li.last {
+    float:right;
+}
+
+.mobile-navbar li a, .dropdown-button{
+    color: #ffffff;
+
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    
+    padding: 14px 20px;
+    font-weight: bold;
+
+
+    
+}
+
+.mobile-navbar li a.material-icons {
+    padding: 11px 20px;
+}
+
+
+.mobile-navbar li.active {
+    background: #eca400;
+
+}
+.mobile-navbar li.active a{
+    color: #2b303a;
+}
+
+
+.mobile-navbar li:hover {
+    background-color: #4F6D7A;
+    transition-duration:0.5s;
+    cursor: pointer;
+}
+
+.mobile-navbar li.dropdown {
+    display: inline-block;
+}
+
+.mobile-navbar .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    float: none;
+}
+
+.mobile-navbar .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+
+
+  
+.mobile-navbar li.dropdown:hover .dropdown-content{
+    display:block;
+    background-color:#2b303a;
+}
+
+.mobile-navbar li.menu-header {
+    background-color:#4F6D7A;
+}
+
+.mobile-navbar .menu-header-content {
+    display:none;
+    background-color:#2b303a;
+
+
+}
+
+.mobile-navbar .menu-header-content a{
+    padding-left: 30px;
+
+
+}
+
+.mobile-navbar .menu-dropdown:hover .menu-header-content {
+    display:block;
+    background-color:#4F6D7A;
+    transition-duration: 0.5s
+
+}
+
+.mobile-navbar .menu-item {
+    background-color: #4f6D7A;
+}
+
+.left,
+.middle,
+.right {
+    padding: 10px;
+  
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.mobile-navbar{
+    grid-area: navbar;
+}
+
+.tagline {
+    grid-area: tag;
+
+    margin-right: 20px;
+    margin-left: 20px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(rocket.jpg) no-repeat center fixed;
+    background-size: cover;
+    text-align: center;
+    min-height: 500px;
+    width: auto;
+    color: white;
+}
+
+.tagline h1 {
+    padding-top: 160px;
+    font-size: 3em;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left:10px;
+}
+
+.tagline p {
+    padding-top: 40px;
+    font-size:1.5em;
+    padding-bottom: 160px;
+    padding-right: 10vw;
+    padding-left:10vw;
+}
+/* Style the left column */
+.left {
+    grid-area: left;
+    margin-left: 20px;
+
+}
+
+.middle {
+    grid-area: middle;
+
+
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+  margin-right: 20px;
+
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'navbar navbar navbar navbar navbar navbar'
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+
+  .left {
+      margin-right: 10px;
+      margin-left:10px;
+  }
+
+  .middle {
+    margin-right: 10px;
+    margin-left:10px;
+  }
+
+  .right {
+    margin-right: 10px;
+    margin-left:10px;
+
+  }
+  nav.navbar {
+      display:none;
+  }
+
+  nav.mobile-navbar {
+      display:block;
+  }
+
+  .tagline h1 {
+    padding-top: 60px;
+    font-size: 3em;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left:10px;
+}
+
+.tagline p {
+    padding-top: 40px;
+    font-size:1.5em;
+    padding-bottom: 60px;
+    padding-right: 10vw;
+    padding-left:10vw;
+}
+}
