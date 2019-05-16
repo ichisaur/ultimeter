@@ -41,5 +41,8 @@
 
 #define BMP388_ADDR 0x76
 #define BNO055_ADDR 0x28
+#define SAMM8Q_ADDR 0x42
+#define H3L1S3_ADDR 0x19
+#define BATTRY_ADDR 0x55
 
 void configure_twi(void);
