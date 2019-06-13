@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+
+$purple: #4F2582;
+$purple-invert: #fff;
+$dark: #2b303a;
+$dark-invert: #fff;
+$primary: #eca400;
+$primary-invert: #2b303a;
+
+// Update the sans-serif font family
+//$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+
+
+@import "../node_modules/bulma/sass/utilities/_all";
+
+$background: $dark;
+
+$navbar-dropdown-arrow: $primary;
+
+$navbar-dropdown-background-color: $primary;
+$nav-dropdown-item-hover-background-color: $purple;
+$navbar-background-color: $primary;
+$navbar-item-hover-background-color: $background;
+$navbar-box-shadow-color: $background;
+$navbar-dropdown-border-top: 2px solid $background;
+// 4. Import the rest of Bulma
+
+@import "../node_modules/bulma/bulma";
+@import '../node_modules/bulma-extensions/bulma-divider/src/sass/index.sass';
+
+.is-sidebar-menu {
+    margin-top: 0.75rem;
+    margin-bottom:0.5 rem;
+    padding: 2.5rem;
+    padding-top:2.0rem;
+    background: $primary;
+  }
+
+  /*
+  .is-sidebar-menu li a {
+    color: $primary-invert;
+  }
+  */
+  
+  .columns.is-fullheight {
+
+    margin-bottom:0px;
+    min-height: calc(100vh - ( 3.5rem - 1.0rem ) );
+    max-height: calc(100vh - ( 3.5rem - 1.0rem ) );
+    height: calc(100vh - ( 3.5rem - 1.0rem ) );
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+  }
+  .columns.is-fullheight .column {
+    overflow-y: auto;
+  }
+  
+  .is-main-content {
+    background: $background;
+  }
+
+  iframe{
+    height: auto;
+  }
+
+  html {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  .columns {
+    height: 100%;
+  }
+
+  .column.no-scroll {
+    overflow-y: auto;
+    overflow-x: visible;
+  }
+
+  .column.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .placeholder {
+    background-color: cyan;
+    margin: 2rem;
+    height: 250px;
+  }
+
+.column-height-fix {
+  height: calc(100vh - ( 4.25rem - 1.0rem ) );
+}
+
+.task-display-hoverable {
+  display: none;
+}
+
+.task-display-hover:hover .task-display-hoverable {
+  display:inline-block;
+}
+
+.task-list {
+  padding-top: 0px;
+}
+// fix
+
+.logininfo {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logintitle {
+  font-size: 4em;
+  width: min-content;
+  margin: auto;
+}
+
+.loginbutton {
+  margin-bottom: 0.55em;
+  width: 100%;
+}
+
+.loginlink {
+  text-decoration: underline;
+  width: max-content;
+  margin: auto;
+}
+
+.registercheck {
+  margin-bottom: 0.55em;
+}
+
+.footers {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.pagetitlefix {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.wronglogin {
+  color: red;
+  margin: auto;
+  padding-bottom: 0.9em;
+  display: none;
+}
+
+.preferences {
+  width: 40%;
+  margin: auto;
+  margin-top: 4em;
+  background-color: white;
+}
+
+.preferences h2 {
+  font-size: 2em;
+  width: max-content;
+  margin: auto;
+  margin-bottom: 0.5em;
+  text-decoration: underline;
+}
+
+.pref {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+  border: 1px solid whitesmoke;
+  font-weight: bold;
+  margin: 0 3em;
+}
+
+.prefbutton {
+  width: max-content;
+  margin-top: 0.5em;
+  margin-left: 3em;
+}
+
+ .checkbox + .checkbox {
+  margin: 0px 0px 0px 20px;
+ }
+
+ .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -30px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#eventaddfix {
+  padding-top: 0.75rem;
+}
+
+#taskdue {
+  font-weight: bold;
+}

@@ -13,26 +13,25 @@
 
   <body>
     
-    <section class="hero is-dark is-fullheight">
+    <div id="navbar-placeholder"></div>
+    <script>
+      $(function(){
+        $("#navbar-placeholder").load('navbar.html', function() {});
+      });
+    </script>
+
+
+    <section class="hero is-dark is-fullheight-with-navbar">
     <!-- Hero head: will stick at the top -->
-    <div class="hero-head is-warning">
-      <div id="navbar-placeholder"></div>
-      <script>
-          $(function(){
-            $("#navbar-placeholder").load('navbar.html', function() {
-            });
-          });
-      </script>
-    </div>
   
     <!-- Hero content: will be in the middle -->
     <div class="hero-body">
       <div class="container has-text-centered">
         <h1 class="title is-1 has-text-primary">
-          The ultimate wireless altimeter solution.
+          Lost your rocket? No worries we got you covered.
         </h1>
-        <h2 class="subtitle is-4">
-          No more hunting rockets, bulky trackers, counting beeps. We take care of all of that.
+        <h2 class="subtitle is-4" id="rocket-location-message">
+          Finding your rocket...
         </h2>
       </div>
     </div>
@@ -43,8 +42,8 @@
     <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-database.js"></script>
 
   
-    
     <script type="text/javascript" src="lib/main.js"></script>
+    <script type="text/javascript" src="lib/locator.js"></script>
 
 
   

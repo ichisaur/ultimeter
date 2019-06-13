@@ -1,0 +1,237 @@
+
+var taskList0 = {
+
+    "asafasgbsda" : {
+        "taskNameValue" : "Finish this assignment",
+        "classNameValue" : "HCI",
+        "dueDateValue" : "2019-05-23",
+        "scheduleDateValue" : "2019-05-23"
+    },
+
+    "sdfagasd" : {
+        "taskNameValue" : "AHHH ORGO MIDTERM",
+        "classNameValue" : "Orgo",
+        "dueDateValue" : "2019-05-24",
+        "scheduleDateValue" : "2019-05-24"
+    },
+    
+
+    "a74uh35nj6y" : {
+        "taskNameValue" : "Finish Project you put off...",
+        "classNameValue" : "Mech Eng",
+        "dueDateValue" : "2019-05-25",
+        "scheduleDateValue" : "2019-05-25"
+    },
+
+    "n78nb5yerth" : {
+        "taskNameValue" : "Math Homework",
+        "classNameValue" : "Math",
+        "dueDateValue" : "2019-05-26",
+        "scheduleDateValue" : "2019-05-26"
+    },
+
+    "3845tcv9nwnertygov89" : {
+        "taskNameValue" : "Fix this thing...",
+        "classNameValue" : "HCI",
+        "dueDateValue" : "2019-05-27",
+        "scheduleDateValue" : "2019-05-27"
+    },
+
+    "4g57wtynov89fg" : {
+        "taskNameValue" : "@Graders it works... mostly...",
+        "classNameValue" : "HCI",
+        "dueDateValue" : "2019-05-28",
+        "scheduleDateValue" : "2019-05-28"
+    },
+
+    "n4r6u345twsdffff" : {
+        "taskNameValue" : "Problem set 8",
+        "classNameValue" : "Mech Eng",
+        "dueDateValue" : "2019-06-02",
+        "scheduleDateValue" : "2019-06-02"
+    },
+}
+
+var taskList1 = {
+
+    "retyjsdfrghsdf" : {
+        "taskNameValue" : "Midterm 2",
+        "classNameValue" : "Math",
+        "dueDateValue" : "2019-05-23",
+        "scheduleDateValue" : "2019-05-23"
+    },
+
+    "45udftghsdfh" : {
+        "taskNameValue" : "Universal design reading",
+        "classNameValue" : "HCI",
+        "dueDateValue" : "2019-05-24",
+        "scheduleDateValue" : "2019-05-24"
+    },
+    
+
+    "xgcj567e4rdth" : {
+        "taskNameValue" : "Read chapter 27-28",
+        "classNameValue" : "Mech Eng",
+        "dueDateValue" : "2019-05-25",
+        "scheduleDateValue" : "2019-05-25"
+    },
+
+    "jr572gardgeh" : {
+        "taskNameValue" : "Problem set 5",
+        "classNameValue" : "Math",
+        "dueDateValue" : "2019-05-26",
+        "scheduleDateValue" : "2019-05-26"
+    },
+
+    "sftgtju56uu56g" : {
+        "taskNameValue" : "Project",
+        "classNameValue" : "Orgo",
+        "dueDateValue" : "2019-05-27",
+        "scheduleDateValue" : "2019-05-27"
+    },
+
+    "m45re74edrg" : {
+        "taskNameValue" : "Meet with group for project",
+        "classNameValue" : "Mech Eng",
+        "dueDateValue" : "2019-05-28",
+        "scheduleDateValue" : "2019-05-28"
+    },
+
+    "nj46uj34gfsgs" : {
+        "taskNameValue" : "Prototype 3",
+        "classNameValue" : "HCI",
+        "dueDateValue" : "2019-06-02",
+        "scheduleDateValue" : "2019-06-02"
+    },
+}
+
+
+var calList0 = {
+
+    "retyjsdfrghsdf" : {
+        "title" : "Math",
+        "repeat" : true,
+        "start" : "2019-05-28T09:00:00",
+        "end" : "2019-05-28T10:00:00",
+        "startTime" :  "9:00:00",
+        "endTime" : "9:50:00",
+        "startRecur" :  "2019-05-28",
+        "endRecur" : "2019-06-28",
+        "daysOfWeek" : [1, 3, 4, 5],
+
+    },
+    "asdf987y0aasdfpguh9" : {
+        "title" : "Orgo",
+        "repeat" : true,
+        "start" : "2019-05-28T09:00:00",
+        "end" : "2019-05-28T10:00:00",
+        "startTime" :  "15:00:00",
+        "endTime" : "16:20:00",
+        "startRecur" :  "2019-05-28",
+        "endRecur" : "2019-06-28",
+        "daysOfWeek" : [1, 3, 5],
+
+    },
+    "99j80asdvni8ofya" : {
+        "title" : "Mech Eng",
+        "repeat" : true,
+        "start" : "2019-05-28T09:00:00",
+        "end" : "2019-05-28T10:00:00",
+        "startTime" :  "12:00:00",
+        "endTime" : "14:50:00",
+        "startRecur" :  "2019-05-28",
+        "endRecur" : "2019-06-28",
+        "daysOfWeek" : [2, 4],
+
+    },
+    "woegn895tyw89oeg" : {
+        "title" : "HCI",
+        "repeat" : true,
+        "start" : "2019-05-28T09:00:00",
+        "end" : "2019-05-28T10:00:00",
+        "startTime" :  "11:00:00",
+        "endTime" : "11:50:00",
+        "startRecur" :  "2019-05-28",
+        "endRecur" : "2019-06-28",
+        "daysOfWeek" : [1, 3],
+
+    },
+    "a7n89o4setv" : {
+        "title" : "Meeting with Prof",
+        "repeat" : false,
+        "start" : "2019-05-31T09:00:00",
+        "end" : "2019-05-31T11:00:00",
+        "startTime" :  "15:00:00",
+        "endTime" : "18:00:00",
+        "startRecur" :  "2019-05-28",
+        "endRecur" : "2019-06-28",
+        "daysOfWeek" : [1, 3, 5],
+
+    },
+
+}
+
+
+var calList1 = {
+    "retyjsdfrghsdf" : {
+        "title" : "Slavic",
+        "repeat" : true,
+        "start" : "2019-05-28T09:00:00",
+        "end" : "2019-05-28T10:00:00",
+        "startTime" :  "9:00:00",
+        "endTime" : "9:50:00",
+        "startRecur" :  "2019-05-28",
+        "endRecur" : "2019-06-28",
+        "daysOfWeek" : [1, 3, 4, 5],
+
+    },
+    "asdf987y0aasdfpguh9" : {
+        "title" : "English",
+        "repeat" : true,
+        "start" : "2019-05-28T09:00:00",
+        "end" : "2019-05-28T10:00:00",
+        "startTime" :  "15:00:00",
+        "endTime" : "17:50:00",
+        "startRecur" :  "2019-05-28",
+        "endRecur" : "2019-06-28",
+        "daysOfWeek" : [1,],
+
+    },
+    "99j80asdvni8ofya" : {
+        "title" : "Poli Sci",
+        "repeat" : true,
+        "start" : "2019-05-28T09:00:00",
+        "end" : "2019-05-28T10:00:00",
+        "startTime" :  "12:00:00",
+        "endTime" : "14:50:00",
+        "startRecur" :  "2019-05-28",
+        "endRecur" : "2019-06-28",
+        "daysOfWeek" : [2, 4],
+
+    },
+    "woegn895tyw89oeg" : {
+        "title" : "HCI",
+        "repeat" : true,
+        "start" : "2019-05-28T09:00:00",
+        "end" : "2019-05-28T10:00:00",
+        "startTime" :  "11:00:00",
+        "endTime" : "11:50:00",
+        "startRecur" :  "2019-05-28",
+        "endRecur" : "2019-06-28",
+        "daysOfWeek" : [1, 3],
+
+    },
+    "a7n89o4setv" : {
+        "title" : "Ted Talk",
+        "repeat" : false,
+        "start" : "2019-05-31T20:00:00",
+        "end" : "2019-05-31T22:00:00",
+        "startTime" :  "15:00:00",
+        "endTime" : "18:00:00",
+        "startRecur" :  "2019-05-28",
+        "endRecur" : "2019-06-28",
+        "daysOfWeek" : [1, 3, 5],
+
+    },
+
+}
